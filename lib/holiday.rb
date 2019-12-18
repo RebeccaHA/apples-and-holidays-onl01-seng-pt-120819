@@ -64,6 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
      holiday = new_array.join(" ")
      supplies = supplies.join(", ")
      puts "  #{holiday}: #{supplies}"
+     binding.pry
     end
   end
 end
