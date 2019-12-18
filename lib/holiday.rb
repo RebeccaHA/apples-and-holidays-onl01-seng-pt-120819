@@ -15,6 +15,14 @@ require 'pry'
   #     :memorial_day => ["BBQ"]
   #   }
   # }
+  
+  # iterate through holiday_hash and print items such that your readout resembles:
+  # Winter:
+  #   Christmas: Lights, Wreath
+  #   New Years: Party Hats
+  # Summer:
+  #   Fourth Of July: Fireworks, BBQ
+  # etc.
 
 def second_supply_for_fourth_of_july(holiday_hash)
   holiday_supplies[:summer][:fourth_of_july][1]
@@ -51,19 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
   data.each do |holiday, supplies|
     holiday_string = holiday.to_s.split("_").collect do |caps|
       caps.capitalize!.join(" ")
-    puts "#{holiday_string}, #{supplies}"
-    
-    
-    
-  # iterate through holiday_hash and print items such that your readout resembles:
-  # Winter:
-  #   Christmas: Lights, Wreath
-  #   New Years: Party Hats
-  # Summer:
-  #   Fourth Of July: Fireworks, BBQ
-  # etc.
+    puts "#{holiday_string}, #{supplies.join(", ")}"
+    end
   end
-end
 end
 
 def all_holidays_with_bbq(holiday_hash)
