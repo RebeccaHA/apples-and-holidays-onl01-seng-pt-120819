@@ -60,7 +60,8 @@ def all_supplies_in_holidays(holiday_hash)
     new_array = []
     array = holiday.to_s.split("_")
     array.collect do |caps|
-      caps.capitalize!
+     new_array << caps.capitalize!
+     
       
 
 end
