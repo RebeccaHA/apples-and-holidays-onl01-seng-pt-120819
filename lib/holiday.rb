@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   data.each do |holiday, supplies|
     array = []
     holiday.to_s.split("_").collect do |caps|
-  
+
 end
 
 def all_holidays_with_bbq(holiday_hash)
