@@ -42,7 +42,7 @@ def all_winter_holiday_supplies(holiday_hash)
   holiday_hash[:winter].collect do |holiday, supply|
     puts supply
   end
-  all_winter_holiday_supplies
+  holiday_hash
 end
 
 def all_supplies_in_holidays(holiday_hash)
