@@ -39,10 +39,10 @@ end
 
 
 def all_winter_holiday_supplies(holiday_hash)
-  holiday_hash[:winter].collect do |holiday, supply|
+  array = holiday_hash[:winter].collect do |holiday, supply|
     puts supply
   end
-  holiday_hash
+ array.flatten
 end
 
 def all_supplies_in_holidays(holiday_hash)
