@@ -55,15 +55,11 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, data|
-    puts "#{season.capitalize}:"
+    puts "#{season.capitalize!}:"
   data.each do |holiday, supplies|
-    string = holiday.to_s.split("_").collect do |caps|
-      caps.capitalize!
-      caps = new_caps.join(" ")
-       puts "#{string}, #{supplies.join(" ,")}"
-    end
-  end
-end
+    array = []
+    holiday.to_s.split("_").collect do |caps|
+  
 end
 
 def all_holidays_with_bbq(holiday_hash)
